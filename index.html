@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="vendors/css/owl.carousel.min.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/animate.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/owl.theme.default.min.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/normalize.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/grid.css" type="text/css" rel="stylesheet">
+    <link href="vendors/css/font-awesome.min.css" rel="stylesheet">
+    <link href="resources/css/style.css" type="text/css" rel="stylesheet">
+    <link href="resources/css/Queries.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,150,300,700,100,300italic' rel='stylesheet' type='text/css'>
+    <script src="vendors/js/jquery-3.3.1.min.js"></script>
+    <script src="vendors/js/owl.carousel.min.js"></script>
+    <title>Xanime T</title>
+</head>
+
+<body class="lock">
+    <header class="main-header">
+        <nav class="main-nav">
+            <div class="container">
+                <div class="navbar">
+                    <img class="logo" src="resources/img/logo.png" />
+                    <img class="black-logo" src="resources/img/black-logo.png" />
+                    <ul class="nav-left">
+                        <li><a href="">Anime</a></li>
+                        <li><a href="">Manga</a></li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Forum</a></li>
+                        <div class="dropdown">
+                            <button class="dropbtn" onclick="myFunction()">Completed
+                            </button>
+                            <div class="dropdown-content" id="myDropdown">
+                                <a href="#">The Ancient Magus</a>
+                                <a href="#">Food Wars! Shokugeki no Soma</a>
+                                <a href="#">Dragon Ball Super</a>
+                            </div>
+                        </div>
+                    </ul>
+                    <ul class="nav-right">
+                        <li><a href="">Sign up</a></li>
+                        <li><a href="">Login</a></li>
+                    </ul>
+                    <div class="nav-right form-control">
+                        <input type="text" placeholder="Search">
+                        <button type="submit" class="search-btn">
+                     <i class="fa fa-search" aria-hidden="true"></i>
+                     </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="clear-fix slider">
+            <div class="owl-carousel owl-theme owl-theme-extend has-center-dots has-middle-nav owl-carousel-example">
+                <div class="item"><img src="resources/img/1.jpg" alt=""></div>
+                <div class="item"><img src="resources/img/2.jpg" alt=""></div>
+                <div class="item"><img src="resources/img/3.jpg" alt=""></div>
+                <div class="item"><img src="resources/img/4.jpg" alt=""></div>
+                <div class="item"><img src="resources/img/5.jpg" alt=""></div>
+                <div class="item"><img src="resources/img/6.jpg" alt=""></div>
+            </div>
+        </div>
+    </header>
+    <section class="popular js--section--popular">
+        <div class="container">
+            <div class="title-feed">
+                <h1>Most Popular</h1>
+            </div>
+        </div>
+        <div class="container card-collection">
+            <div class="clear-fix container">
+                <div class="col span-1-of-3">
+                    <div class="movie-card">
+                        <div class="movie-container">
+                            <a href="#"><img width="100" src="resources/img/5.jpg" alt="cover" class="cover" /></a>
+                            <div class="hero">
+                                <div class="dark-back">
+                                    <img src="resources/img/card1.jpg" class="article-bg">
+                                </div>
+                                <div class="details">
+                                    <div class="title1">BORUTO <span>PG-13</span></div>
+                                    <div class="title2">NARUTO NEXT GENERATIONS</div>
+                                    <fieldset class="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                        <input type="radio" id="star4" name="rating" value="4" checked /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                    </fieldset>
+                                    <span class="likes">109 likes</span>
+                                </div>
+                                <!-- end details -->
+                            </div>
+                            <!-- end hero -->
+                            <div class="description">
+                                <div class="column1">
+                                    <span class="tag">action</span>
+                                    <span class="tag">fantasy</span>
+                                    <span class="tag">adventure</span>
+                                </div>
+                                <!-- end column1 -->
+                                <div class="column2">
+                                    <p>The life of the shinobi is beginning to change. Boruto Uzumaki, son of Seventh Hokage Naruto Uzumaki... <a href="#">read more</a></p>
+                                    <div class="avatars">
+                                        <a href="#" data-tooltip="Person 1" data-placement="top">
+                              <img src="resources/img/Cast/1.png" alt="avatar1" />
+                              </a>
+                                        <a href="#" data-tooltip="Person 2" data-placement="top">
+                              <img src="resources/img/Cast/2.png" alt="avatar1" />
+                              </a>
+                                        <a href="#" data-tooltip="Person 3" data-placement="top">
+                              <img src="resources/img/Cast/3.png" alt="avatar1" />
+                              </a>
+                                    </div>
+                                    <!-- end avatars -->
+                                </div>
+                                <!-- end column2 -->
+                            </div>
+                            <!-- end description -->
+                        </div>
+                        <!-- end movie container -->
+                    </div>
+                    <!--end movie card -->
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="movie-card">
+                        <div class="movie-container">
+                            <a href="#"><img width="100" src="resources/img/7.jpg" alt="cover" class="cover" /></a>
+                            <div class="hero">
+                                <img src="resources/img/card2.jpg" class="article-bg">
+                                <div class="details">
+                                    <div class="title1">My Hero Academia <span>PG-13</span></div>
+                                    <div class="title2">Sseson 3</div>
+                                    <fieldset class="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                        <input type="radio" id="star4" name="rating" value="4" checked /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                    </fieldset>
+                                    <span class="likes">109 likes</span>
+                                </div>
+                                <!-- end details -->
+                            </div>
+                            <!-- end hero -->
+                            <div class="description">
+                                <div class="column1">
+                                    <span class="tag">action</span>
+                                    <span class="tag">fantasy</span>
+                                    <span class="tag">adventure</span>
+                                </div>
+                                <!-- end column1 -->
+                                <div class="column2">
+                                    <p>Izuku has dreamt of being a hero all his life—a lofty goal for anyone, but especially challenging for a kid with no ... <a href="#">read more</a></p>
+                                    <div class="avatars">
+                                        <a href="#" data-tooltip="Person 1" data-placement="top">
+                              <img src="resources/img/Cast/1.png" alt="avatar1" />
+                              </a>
+                                        <a href="#" data-tooltip="Person 2" data-placement="top">
+                              <img src="resources/img/Cast/2.png" alt="avatar1" />
+                              </a>
+                                        <a href="#" data-tooltip="Person 3" data-placement="top">
+                              <img src="resources/img/Cast/3.png" alt="avatar1" />
+                              </a>
+                                    </div>
+                                    <!-- end avatars -->
+                                </div>
+                                <!-- end column2 -->
+                            </div>
+                            <!-- end description -->
+                        </div>
+                        <!-- end movie container -->
+                    </div>
+                    <!--end movie card -->
+                </div>
+                <div class="col span-1-of-3">
+                    <div class="movie-card">
+                        <div class="movie-container">
+                            <a href="#"><img width="100" src="resources/img/8.jpg" alt="cover" class="cover" /></a>
+                            <div class="hero">
+                                <img src="resources/img/card3.jpg" class="article-bg">
+                                <div class="details">
+                                    <div class="title1">Sword Art Online Alternative <span>PG-13</span></div>
+                                    <div class="title2">Gun Gale Online</div>
+                                    <fieldset class="rating">
+                                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                        <input type="radio" id="star4" name="rating" value="4" checked /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                    </fieldset>
+                                    <span class="likes">109 likes</span>
+                                </div>
+                                <!-- end details -->
+                            </div>
+                            <!-- end hero -->
+                            <div class="description">
+                                <div class="column1">
+                                    <span class="tag">action</span>
+                                    <span class="tag">fantasy</span>
+                                    <span class="tag">adventure</span>
+                                </div>
+                                <!-- end column1 -->
+                                <div class="column2">
+                                    <p>In the world of guns and steel that is Gun Gale Online, LLENN has been a devoted, female solo player.... <a href="#">read more</a></p>
+                                    <div class="avatars">
+                                        <a href="#" data-tooltip="Person 1" data-placement="top">
+                              <img src="resources/img/Cast/1.png" alt="avatar1" />
+                              </a>
+                                        <a href="#" data-tooltip="Person 2" data-placement="top">
+                              <img src="resources/img/Cast/2.png" alt="avatar1" />
+                              </a>
+                                        <a href="#" data-tooltip="Person 3" data-placement="top">
+                              <img src="resources/img/Cast/3.png" alt="avatar1" />
+                              </a>
+                                    </div>
+                                    <!-- end avatars -->
+                                </div>
+                                <!-- end column2 -->
+                            </div>
+                            <!-- end description -->
+                        </div>
+                        <!-- end movie container -->
+                    </div>
+                    <!--end movie card -->
+                </div>
+                <div class="clear-fix container">
+                    <div class="col span-1-of-3">
+                        <div class="movie-card">
+                            <div class="movie-container">
+                                <a href="#"><img width="100" src="resources/img/9.jpg" alt="cover" class="cover" /></a>
+                                <div class="hero">
+                                    <div class="dark-back">
+                                        <img src="resources/img/card4.jpg" class="article-bg">
+                                    </div>
+                                    <div class="details">
+                                        <div class="title1">Kino's Journey <span>PG-13</span></div>
+                                        <div class="title2">the Beautiful World- the Animated Series</div>
+                                        <fieldset class="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                            <input type="radio" id="star4" name="rating" value="4" checked /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                        </fieldset>
+                                        <span class="likes">109 likes</span>
+                                    </div>
+                                    <!-- end details -->
+                                </div>
+                                <!-- end hero -->
+                                <div class="description">
+                                    <div class="column1">
+                                        <span class="tag">action</span>
+                                        <span class="tag">fantasy</span>
+                                        <span class="tag">adventure</span>
+                                    </div>
+                                    <!-- end column1 -->
+                                    <div class="column2">
+                                        <p>"The world is not beautiful, therefore it is." A story about Kino, who travels around the world with nothi... <a href="#">read more</a></p>
+                                        <div class="avatars">
+                                            <a href="#" data-tooltip="Person 1" data-placement="top">
+                              <img src="resources/img/Cast/1.png" alt="avatar1" />
+                              </a>
+                                            <a href="#" data-tooltip="Person 2" data-placement="top">
+                              <img src="resources/img/Cast/2.png" alt="avatar1" />
+                              </a>
+                                            <a href="#" data-tooltip="Person 3" data-placement="top">
+                              <img src="resources/img/Cast/3.png" alt="avatar1" />
+                              </a>
+                                        </div>
+                                        <!-- end avatars -->
+                                    </div>
+                                    <!-- end column2 -->
+                                </div>
+                                <!-- end description -->
+                            </div>
+                            <!-- end movie container -->
+                        </div>
+                        <!--end movie card -->
+                    </div>
+                    <div class="col span-1-of-3">
+                        <div class="movie-card">
+                            <div class="movie-container">
+                                <a href="#"><img width="100" src="resources/img/10.jpg" alt="cover" class="cover" /></a>
+                                <div class="hero">
+                                    <img src="resources/img/card5.jpg" class="article-bg">
+                                    <div class="details">
+                                        <div class="title1">Black Clover <span>PG-13</span></div>
+                                        <div class="title2">Sseson 1</div>
+                                        <fieldset class="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                            <input type="radio" id="star4" name="rating" value="4" checked /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                        </fieldset>
+                                        <span class="likes">109 likes</span>
+                                    </div>
+                                    <!-- end details -->
+                                </div>
+                                <!-- end hero -->
+                                <div class="description">
+                                    <div class="column1">
+                                        <span class="tag">magic</span>
+                                        <span class="tag">shounen</span>
+                                        <span class="tag">adventure</span>
+                                    </div>
+                                    <!-- end column1 -->
+                                    <div class="column2">
+                                        <p>In a world where magic is everything, Asta and Yuno are both found abandoned at a church on the same day. Whil... <a href="#">read more</a></p>
+                                        <div class="avatars">
+                                            <a href="#" data-tooltip="Person 1" data-placement="top">
+                              <img src="resources/img/Cast/1.png" alt="avatar1" />
+                              </a>
+                                            <a href="#" data-tooltip="Person 2" data-placement="top">
+                              <img src="resources/img/Cast/2.png" alt="avatar1" />
+                              </a>
+                                            <a href="#" data-tooltip="Person 3" data-placement="top">
+                              <img src="resources/img/Cast/3.png" alt="avatar1" />
+                              </a>
+                                        </div>
+                                        <!-- end avatars -->
+                                    </div>
+                                    <!-- end column2 -->
+                                </div>
+                                <!-- end description -->
+                            </div>
+                            <!-- end movie container -->
+                        </div>
+                        <!--end movie card -->
+                    </div>
+                    <div class="col span-1-of-3">
+                        <div class="movie-card">
+                            <div class="movie-container">
+                                <a href="#"><img width="100" src="resources/img/8.jpg" alt="cover" class="cover" /></a>
+                                <div class="hero">
+                                    <img src="resources/img/card3.jpg" class="article-bg">
+                                    <div class="details">
+                                        <div class="title1">Sword Art Online Alternative <span>PG-13</span></div>
+                                        <div class="title2">Gun Gale Online</div>
+                                        <fieldset class="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                            <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                            <input type="radio" id="star4" name="rating" value="4" checked /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                                            <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                                            <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                            <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                            <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                        </fieldset>
+                                        <span class="likes">109 likes</span>
+                                    </div>
+                                    <!-- end details -->
+                                </div>
+                                <!-- end hero -->
+                                <div class="description">
+                                    <div class="column1">
+                                        <span class="tag">action</span>
+                                        <span class="tag">fantasy</span>
+                                        <span class="tag">adventure</span>
+                                    </div>
+                                    <!-- end column1 -->
+                                    <div class="column2">
+                                        <p>In the world of guns and steel that is Gun Gale Online, LLENN has been a devoted, female solo player.... <a href="#">read more</a></p>
+                                        <div class="avatars">
+                                            <a href="#" data-tooltip="Person 1" data-placement="top">
+                              <img src="resources/img/Cast/1.png" alt="avatar1" />
+                              </a>
+                                            <a href="#" data-tooltip="Person 2" data-placement="top">
+                              <img src="resources/img/Cast/2.png" alt="avatar1" />
+                              </a>
+                                            <a href="#" data-tooltip="Person 3" data-placement="top">
+                              <img src="resources/img/Cast/3.png" alt="avatar1" />
+                              </a>
+                                        </div>
+                                        <!-- end avatars -->
+                                    </div>
+                                    <!-- end column2 -->
+                                </div>
+                                <!-- end description -->
+                            </div>
+                            <!-- end movie container -->
+                        </div>
+                        <!--end movie card -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="showmore"><a>Give me More</a></div>
+        </div>
+    </section>
+
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/app.js"></script>
+</body>
+
+</html>

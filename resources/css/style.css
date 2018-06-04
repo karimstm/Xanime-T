@@ -1,0 +1,620 @@
+
+* {
+    margin:0;
+    padding:0;
+    
+}
+
+html {
+    background-color:rgb(18, 22, 31);
+    color: #FFF;
+    font-family:'lato', 'Arial', sans-serif;
+    font-weight:300px;
+    font-size: 20px;
+    text-rendering:optimizeLegibility;
+    
+}
+.lock { overflow: hidden; }
+
+.clear-fix {zoom:1}
+.clear-fix:after{
+    content:' ';
+    clear:both;
+    display: block;
+    height: 0;
+}
+
+
+/*---------------------------------------------*/
+/*--------------Container----------------------*/
+/*---------------------------------------------*/
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    
+}
+
+/*---------------------------------------------*/
+/*--------------Header   ----------------------*/
+/*---------------------------------------------*/
+
+.main-nav{
+    background-color: #293A4A;
+    font-size: 80%;
+}
+
+.navbar {
+    display: block;
+    max-height: 50px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/*---------------------------------------------*/
+/*--------------Logo     ----------------------*/
+/*---------------------------------------------*/
+
+
+
+.logo,
+.black-logo{
+    float: left;
+    height: 40px;
+    width: auto;
+    margin-top: 5px
+}
+
+.black-logo {display: none;}
+
+/*---------------------------------------------*/
+/*--------------Navbar   ----------------------*/
+/*---------------------------------------------*/
+
+.navbar ul {
+    list-style: none;
+}
+
+.nav-left li {
+    float: left;
+}
+
+.nav-right li {
+    float: right;  
+}
+
+.navbar li a:hover {
+    background: #e95a4b;
+}
+
+.navbar a:visited,
+.navbar a:link, .dropdown .dropbtn {
+    padding: 13px 16px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+    line-height: 1.5;
+}
+
+/*---------------------------------------------*/
+/*--------------Sticky Nav---------------------*/
+/*---------------------------------------------*/
+
+.sticky {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.57);
+    z-index: 10;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+.sticky a:visited,
+.sticky a:link, .sticky .dropdown .dropbtn {
+    color: #555;
+    text-align: left;
+}
+
+.sticky .black-logo {
+    display: block;
+}
+.sticky .logo {
+    display: none;
+}
+
+.sticky input[type=text] {
+    background: inherit;
+    border:1px solid #eee;
+}
+
+.sticky input[type=text], .sticky .search-btn {
+    background: inherit;
+    border:1px solid rgba(201, 201, 201, 0.67);
+}
+
+.sticky a:hover,
+.sticky .dropdown .dropbtn:hover,
+.sticky .dropdown .dropbtn a:hover
+{
+    color: #FFF;
+    text-align: left;
+}
+.sticky .dropdown a {
+    color: #fff;
+}
+/*--------------------------------------------*/
+/*--------------DropDown Menu-----------------*/
+/*--------------------------------------------*/
+
+.dropdown {
+    float: left;
+    overflow: hidden
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+    background: #e95a4b;
+}
+
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    font-size: 0.7rem;
+    background-color: #293A4A;
+    border-top: 2px solid rgb(255, 221, 0);
+    min-width: 15rem;
+    box-shadow: 0 0 0.5rem 0 rgba(0,0,0,.8);
+    z-index: 5;
+}
+
+.dropdown-content a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #354b60;
+}
+
+.dropdown:hover > .dropdown-content{
+    display: block;
+}
+
+
+/*---------------------------------------------*/
+/*------------End Of DropDown Menu-------------*/
+/*---------------------------------------------*/
+
+.form-control{
+    display: inline-block;
+    float: right;
+}
+
+input[type=text], input[type=email], select, textarea {
+    padding: 7px;
+    border:1px solid #ccc;
+    margin: 7px 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #4D6479;
+    background-color: #293A4A;
+    border: 1px solid #27537b;
+    display: table-cell;
+    outline: none;
+}
+
+input[type=text]:focus, input[type=email]:focus, select:focus, textarea:focus {
+    border-color: #f1c40f;
+    box-shadow: none;
+}
+
+.search-btn{
+    padding: 7px;
+    margin: 6px 0px;
+    background: #293A4A;
+    border-color: #293A4A;
+    border: 1px solid #27537b;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #526A82;
+    position: relative;
+    right: 2px;
+}
+
+.online-block {
+    position: relative;
+    width: 260px;
+    height: auto;
+    display: inline-block;   
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-carousel .owl-dots {
+  height: 22px;
+  line-height: 22px;
+  text-align: center
+}
+/*--------------------------------------------------*/
+/*----------------Sections -------------------------*/
+/*--------------------------------------------------*/
+
+section {
+    padding: 30px 0px
+}
+
+
+
+/*--------------------------------------------------*/
+/*----------------Headings-------------------------*/
+/*--------------------------------------------------*/
+
+.title-feed {
+    position: relative;
+    margin: 0 0 10px 0;
+    z-index: 0;
+}
+
+.title-feed:after {
+    content: no-close-quote;
+	position: absolute;
+	width: 100%;
+	height: 14px;
+	bottom: 5px;
+	left: 0;
+    background: url(img/title_pat2.png) repeat;
+	z-index: 1;
+}
+
+.title-feed h1 {
+    position: relative;
+    font-weight: bold;
+    font-size: 120%;
+    word-spacing: 2px;
+    bottom:2px;
+    margin: 0;
+    padding: 0 10px 0 0;
+    display: inline;
+    background: rgb(18, 22, 31);
+    z-index: 9;
+}
+
+/*-----------------------------------------------*/
+/*------------------Card styling-----------------*/
+/*-----------------------------------------------*/
+
+.card-collection {
+
+}
+
+.card-collection a {
+  text-decoration: none;
+  color: #5C7FB8;
+}
+
+.card-collection a:hover {
+  text-decoration: underline;
+}
+
+.movie-card {
+  font: 14px/22px "Lato", Arial, sans-serif;;
+  color: #A9A8A3;
+  padding: 4px 0;
+}
+
+.movie-container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  background: #302e42;
+  border-radius: 5px;
+  position: relative;
+  transition: .5s box-shadow, .5s background ease;
+}
+
+.movie-container:hover{
+    background: rgb(25, 24, 35);
+    box-shadow: 0 0 0.5rem 0 rgba(0,0,0,.8);
+}
+.movie-container:hover > .hero:before{
+    background: rgb(25, 24, 35);
+}
+
+.dark-back {
+    background: #fff;
+}
+.hero {
+  height: 100px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.hero img {
+    position:absolute;
+    z-index:-2;
+    width: 100%;
+}
+
+.hero:after,
+.hero:before{
+  content: '';
+  width: 101%;
+  height: 100%;
+  position: absolute;
+  overflow: visible;
+  left: 0;
+  background-size: cover;
+  z-index:-1;
+  -webkit-transform: skewY(-2.2deg);
+          transform: skewY(-2.2deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-backface-visibility: hidden;
+}
+.hero:before{
+    top: 100%;
+    background: rgb(48, 46, 66);
+    transition: .5s box-shadow, .5s background ease;
+}
+.hero:after {
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.58)); 
+}
+
+
+
+.cover {
+  position: absolute;
+  top: 10px;
+  left: 6px;
+  z-index: 2;
+}
+
+.details {
+  padding: 10px 0 0 140px;
+}
+
+.details .title1 {
+  color: white;
+  font-size: 90%;
+  position: relative;
+}
+
+.details .title1 span {
+  position: absolute;
+  top: 0;
+  margin-left: 3px;
+  background: #C4AF3D;
+  border-radius: 2px;
+  color: #544C21;
+  font-size: 70%;
+  padding: 0px 6px;
+}
+
+.details .title2 {
+  color: #C7C1BA;
+  font-size: 90%;
+  font-weight: 300;
+  margin-bottom: 2px;
+}
+
+.details .likes {
+  margin-left: 4px;
+}
+
+.details .likes:before {
+  content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png");
+  position: relative;
+  top: 2px;
+  padding-right: 7px;
+}
+
+.description {
+  bottom: 0px;
+  height: 175px;
+  font-size: 90%;
+  line-height: 24px;
+  color: #B1B0AC;
+}
+
+.column1 {
+    padding-left: 0px;
+    padding-top: 67px;
+    width: 110px;
+    float: left;
+    text-align: center;
+}
+
+.tag {
+  background: white;
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 80%;
+  margin-right: 2px;
+  line-height: 3px;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: #ddd;
+}
+
+.column2 {
+  padding-left: 4px;
+    padding-top: 6px;
+    margin-left: 5px;
+    width: 65%;
+    float: left;
+    display: inline;
+}
+
+.avatars {
+  margin-top: 12px;
+}
+.avatars img {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #2b2840d1;
+    margin-left: 6px;
+}
+.avatars img:hover {
+  opacity: 0.5;
+}
+.avatars a:hover {
+  text-decoration: none;
+}
+
+fieldset, label {
+  margin: 0;
+  padding: 0;
+}
+/****** Style Star Rating Widget *****/
+
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating > label:before {
+  margin: 5px;
+  margin-top: 0;
+  font-size: 1em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: #ddd;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #FFD700;
+}
+
+/* hover previous stars in list */
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+  color: #FFED85;
+}
+
+a[data-tooltip] {
+  position: relative;
+}
+
+a[data-tooltip]::before,
+a[data-tooltip]::after {
+  position: absolute;
+  display: none;
+  opacity: 0.85;
+}
+
+a[data-tooltip]::before {
+  /*
+   * using data-tooltip instead of title so we 
+   * don't have the real tooltip overlapping
+   */
+  content: attr(data-tooltip);
+  background: #000;
+  color: #fff;
+  font-size: 10px;
+  padding: 0 25px;
+  border-radius: 5px;
+  /* we don't want the text to wrap */
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+a[data-tooltip]::after {
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  content: '';
+}
+
+a[data-tooltip]:hover::before,
+a[data-tooltip]:hover::after {
+  display: block;
+}
+
+/** positioning **/
+/* top tooltip */
+a[data-tooltip][data-placement="top"]::before {
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 45px;
+}
+
+a[data-tooltip][data-placement="top"]::after {
+  border-top-color: #000;
+  border-bottom: none;
+  bottom: 50px;
+  left: 20px;
+  margin-bottom: 4px;
+}
+
+.showmore {
+    background-color: #302e42;
+    text-align: center;
+    border-radius: 5px;
+    width: 98%;
+    margin: 1%;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 80%;
+    color: #5C7FB8;
+    font-weight: 600;
+    transition: .5s box-shadow, .5s background ease;
+}
+
+.showmore a{
+    display:block;
+    line-height:1.5;
+    padding: 5px 0;
+}
+
+.showmore:hover{
+    background-color: rgb(25, 24, 35);
+    box-shadow: 0 0 0.5rem 0 rgba(0,0,0,.8);
+}

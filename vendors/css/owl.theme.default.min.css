@@ -1,0 +1,85 @@
+
+@use postcss-nested;
+@use postcss-cssnext;
+.owl-theme .owl-dot {
+  background: gray;
+  border: 1px solid darkgray;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  transition: background 0.2s;
+  display: inline-block;
+}
+.owl-theme .owl-dot:hover {
+  background: lightgray;
+}
+.owl-theme .owl-dot.active {
+  background: white;
+}
+.owl-theme .owl-dots .owl-dot {
+  margin: 0 8px;
+}
+.owl-theme .owl-dots.disabled .owl-dot {
+  display: none;
+}
+.owl-theme .owl-nav {
+  display: inline-block;
+  text-align: center;
+}
+.owl-theme .owl-prev,
+.owl-theme .owl-next {
+  width: 44px;
+  height: 60px;
+  line-height: 60px;
+  background: rgb(54, 54, 54);
+  position: relative;
+  display: inline-block;
+  transition: background color 0.2s;
+}
+.owl-theme .owl-prev:hover,
+.owl-theme .owl-next:hover {
+  background: #3e3d3d;
+}
+.owl-theme .owl-prev.disabled,
+.owl-theme .owl-next.disabled {
+  color: lightgray;
+  background: lightergray;
+}
+
+.owl-theme-extend .red-nav .owl-prev,
+.owl-theme-extend .red-nav .owl-next {
+  background: red;
+}
+.owl-theme-extend .red-dot {
+  background: red;
+}
+.owl-theme-extend .red-dot:hover, .owl-theme-extend .red-dot.active {
+  background: #ea4f4f;
+}
+.owl-theme-extend .yellow-dot {
+  background: yellow;
+}
+.owl-theme-extend .yellow-dot:hover, .owl-theme-extend .yellow-dot.active {
+  background: #e3ca3d;
+}
+.owl-theme-extend.has-middle-nav .owl-nav {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  top: 50%;
+  left: 0;
+}
+.owl-theme-extend.has-middle-nav .owl-prev,
+.owl-theme-extend.has-middle-nav .owl-next {
+  transform: translateY(-50%);
+  position: absolute;
+}
+.owl-theme-extend.has-middle-nav .owl-prev {
+  left: 0;
+}
+.owl-theme-extend.has-middle-nav .owl-next {
+  right: 0;
+}
+.owl-theme-extend.has-center-dots .owl-dots {
+  text-align: center;
+}
