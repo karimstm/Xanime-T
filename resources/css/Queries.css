@@ -1,20 +1,75 @@
 @media only screen and (max-width: 1200px) {
-    .main-nav {
-        width: 100%;
-         padding: 0 2%;
-    }
-    
-    .container {
-        padding: 0 2%;
-    }
 
+    
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 900px) {
-    .navbar{
-        display: none;
+
+    .container 
+    {
+            padding: 5px;
+    }
+    .top-menu-standard form.search-group,
+    .top-menu-standard > div > ul 
+    {
+        position: absolute;
+        height: 100%;
+        transform: translate(-200%, 0);
+    }
+    .top-menu-standard > div > img + div
+    {
+        display:inline-block!important
+        
+    }
+    
+    .top-menu-standard > div > ul
+    {
+        float: none;
+        padding-top: 5px;
+        width: 100%;
+    }
+    
+    .top-menu-standard > div > ul li
+    {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .top-menu-standard .search-group
+    {
+        display: flex;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .top-menu-standard .search-bar
+    {
+        flex: 1;
+    }
+    .top-menu-standard .search-group > button
+    {
+        top: 0;
+    }
+    
+    .top-menu-standard ul.dropdown
+    {
+        position: relative;
+        width: 100%;
+    }
+    
+    .top-menu-standard form.extended,
+    .top-menu-standard > div > ul.extended 
+    {
+        position: relative;
+        height: 100%;
+        transform: translate(0, 0);
+
+    }
+    
+    .post-detail 
+    {
+        width: 50%;
     }
 }
 
@@ -22,5 +77,8 @@
 
 @media only screen and (max-width: 480px) {
     
-
+    .post-detail 
+    {
+        width: 100%;
+    }
 }
